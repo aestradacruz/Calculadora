@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.menu.abel.calculadora.MainActivity">
+
+
+    <!-- Linear de Pantalla -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:elevation="8dp"
+        android:background="#00BCD4">
+
+        <TextView
+            android:text="0"
+            android:id="@+id/textViewPantalla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/number_size"/>
+
+    </LinearLayout>
+
+    <!-- Linear de numeros -->
+    <GridLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:orientation="horizontal"
+        android:rowOrderPreserved="true">
+
+        <Button
+            android:text="7"
+            android:id="@+id/ButtonSiete"
+            android:onClick="mostrarDigito"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="8"
+            android:id="@+id/ButtonOcho"
+            android:onClick="mostrarDigito"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="9"
+            android:id="@+id/ButtonNueve"
+            android:onClick="mostrarDigito"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="-"
+            android:id="@+id/ButtonMenos"
+            android:onClick="estableceOperador"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+
+        <Button
+            android:text="4"
+            android:id="@+id/ButtonCuatro"
+            android:onClick="mostrarDigito"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+
+        <Button
+            android:text="5"
+            android:id="@+id/ButtonCinco"
+            android:onClick="mostrarDigito"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+        <Button
+            android:text="6"
+            android:id="@+id/ButtonSeis"
+            android:onClick="mostrarDigito"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="+"
+            android:id="@+id/ButtonMas"
+            android:onClick="estableceOperador"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="1"
+            android:id="@+id/ButtonUno"
+            android:onClick="mostrarDigito"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="2"
+            android:id="@+id/ButtonDos"
+            android:onClick="mostrarDigito"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="3"
+            android:id="@+id/ButtonTres"
+            android:onClick="mostrarDigito"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="x"
+            android:id="@+id/ButtonPor"
+            android:onClick="estableceOperador"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="C"
+            android:id="@+id/ButtonReset"
+            android:onClick="limpiarPantalla"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="0"
+            android:id="@+id/ButtonCero"
+            android:onClick="mostrarDigito"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="="
+            android:id="@+id/ButtonIgual"
+            android:onClick="realizarOperacion"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="/"
+            android:id="@+id/ButtonDivision"
+            android:onClick="estableceOperador"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+        <Button
+            android:text="DELETE"
+            android:id="@+id/ButtonBorrar"
+            android:onClick="borrarDigito"
+            android:layout_width="80dp"
+            android:layout_height="83dp"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorNumber"
+            android:background="@color/colorButton"/>
+
+    </GridLayout>
+
+
+
+
+
+
+</LinearLayout>
