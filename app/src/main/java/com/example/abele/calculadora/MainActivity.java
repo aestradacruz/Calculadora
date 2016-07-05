@@ -115,8 +115,6 @@ public class MainActivity extends AppCompatActivity {
             segundoNumero = 0;
         }
 
-
-
         if(valorOperador == 1){
             resultado = primerNumero - segundoNumero;
             tvPantalla.setText("" + resultado);
@@ -130,16 +128,17 @@ public class MainActivity extends AppCompatActivity {
             tvPantalla.setText("" + resultado);
 
         } else if(valorOperador == 4){
-            try{
+
+            if(segundoNumero == 0){
+                Toast.makeText(this, "Dividir entre 0 es incorrecto. Prueba de nuevo.", Toast.LENGTH_LONG).show();
+
+            }else{
                 resultado = primerNumero / segundoNumero;
                 tvPantalla.setText("" + resultado);
-            }catch (Exception ae) {
-                Toast.makeText(this, "Dividir entre 0 es incorrecto. Prueba de nuevo.", Toast.LENGTH_LONG).show();
             }
+
         }
-
     }
-
 
 }
 
