@@ -73,7 +73,7 @@
         <Button
             android:text="-"
             android:id="@+id/ButtonMenos"
-            android:onClick="estableceOperador"
+            android:onClick="setOperador"
             android:layout_width="80dp"
             android:layout_height="83dp"
             android:textSize="20dp"
@@ -118,7 +118,7 @@
         <Button
             android:text="+"
             android:id="@+id/ButtonMas"
-            android:onClick="estableceOperador"
+            android:onClick="setOperador"
             android:layout_width="80dp"
             android:layout_height="83dp"
             android:textSize="20dp"
@@ -162,7 +162,7 @@
         <Button
             android:text="x"
             android:id="@+id/ButtonPor"
-            android:onClick="estableceOperador"
+            android:onClick="setOperador"
             android:layout_width="80dp"
             android:layout_height="83dp"
             android:textSize="20dp"
@@ -195,7 +195,7 @@
         <Button
             android:text="="
             android:id="@+id/ButtonIgual"
-            android:onClick="realizarOperacion"
+            android:onClick="getResultado"
             android:layout_width="80dp"
             android:layout_height="83dp"
             android:textSize="20dp"
@@ -206,7 +206,7 @@
         <Button
             android:text="/"
             android:id="@+id/ButtonDivision"
-            android:onClick="estableceOperador"
+            android:onClick="setOperador"
             android:layout_width="80dp"
             android:layout_height="83dp"
             android:textSize="20dp"

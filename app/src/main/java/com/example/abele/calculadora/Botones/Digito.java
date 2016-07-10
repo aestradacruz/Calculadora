@@ -3,14 +3,23 @@ package com.example.abele.calculadora.Botones;
 import com.example.abele.calculadora.R;
 
 /**
+ * Clase que maneja los digitos seleccionados por el usuario.
  * Created by abele on 20/06/2016.
  */
+
 public class Digito extends Boton{
 
     private int id;
 
+
+    /**
+     * Método que recibe y evalua el ID del digito seleccionado.
+     * @return Retorna un número entre el 0 y 9 según corresponda con el digito seleccionado.
+     */
     @Override
     public int getId(){
+
+
 
         switch (id){
 
@@ -47,6 +56,10 @@ public class Digito extends Boton{
         return 0;
     }
 
+    /**
+     * Método que recibe como parámetro el ID del digito seleccionado
+     * El valor recibido por el parametro es asignado a la variable de clase "id".
+     */
     @Override
     public void setId(int id){
         this.id = id;

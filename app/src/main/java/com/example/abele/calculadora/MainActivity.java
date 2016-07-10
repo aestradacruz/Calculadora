@@ -36,8 +36,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //Metodo mostrarDigito. Muestra en pantalla el digito seleccionado por el usuario.
-
+    /**
+     * Método que muestra en la pantalla el digito seleccionado por el usuario
+     */
     public void mostrarDigito(View view){
 
         idButton = view.getId();
@@ -47,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
         tvPantalla.setText(tvPantalla.getText() + ""+ digito.getId());
     }
 
-
-    /*Metodo limpiarPantalla. Inicializa el valor de las variables primerNumero y segundoNumero a 0.
-      Y limpia los valores mostrados en la pantalla. */
-
+    /**
+     * Método que inicializa las variables primerNumero y segundoNumero a 0.
+     * Limpia los digitos en pantalla.
+     */
     public void limpiarPantalla(View view){
 
         primerNumero=0;
@@ -60,8 +61,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /* Método borrarDigito. Elimina el ultimo digito mostrado en pantalla.*/
-
+    /**
+     * Método que elimina el ultimo digito de la pantalla.
+     */
     public void borrarDigito(View view){
 
         String cadenaInicial = tvPantalla.getText().toString();
@@ -82,13 +84,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    /*Metodo estableceOperador.
-        Inicializa el valor de la variable primerNumero.
-        Limpia la pantalla.
-        Inicializa el valor de la variable valorOperador
+    /**
+     * Metodo que inicializa la variable primerNumero según el digito seleccionado por el usuario.
+     * Limpia los digitos en pantalla
+     * Inicializa la variable valorOperador según el operador seleccionado por el usuario.
      */
-
-    public void estableceOperador(View view) {
+    public void setOperador(View view) {
 
         try {
             primerNumero = Integer.parseInt(tvPantalla.getText().toString());
@@ -105,9 +106,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //Metodo realizarOperacion. Realiza la operación y muestra el resultado en pantalla.
-
-    public void realizarOperacion(View view){
+    /**
+     * Método que realiza la operación y muestra el resultado en pantalla.
+     */
+    public void getResultado(View view){
 
         try {
             segundoNumero = Integer.parseInt(tvPantalla.getText().toString());
