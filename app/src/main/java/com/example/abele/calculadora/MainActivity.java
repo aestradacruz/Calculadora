@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     int resultado;
     int valorOperador;  //Variable que almacena el valor del operador.
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
