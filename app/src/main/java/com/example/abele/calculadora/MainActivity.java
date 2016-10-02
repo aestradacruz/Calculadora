@@ -15,7 +15,7 @@ import com.example.abele.calculadora.Botones.Operador;
  *   2) Elimina el ultimo digito que contenga el TextView.
  *   3) Elimina el contenido completo que muestre el TextView .
  *   4) Realiza la operación.
- * @autor Abel Estrada Cruz
+ * @autor Abel Estrada Cruz.
  * @version 1.0
  * @since Calculadora 1.0
  */
