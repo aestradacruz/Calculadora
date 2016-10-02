@@ -23,11 +23,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/number_size"/>
+            android:textSize="@dimen/number_size" />
 
     </LinearLayout>
 
-    <!-- Linear de numeros -->
+    <!-- Grilla de numeros -->
     <GridLayout
         android:background="@color/colorWhite"
         android:layout_width="match_parent"
@@ -172,7 +172,7 @@
 
         <Button
             android:text="C"
-            android:id="@+id/ButtonReset"
+            android:id="@+id/ButtonClear"
             android:onClick="limpiarPantalla"
             android:layout_width="80dp"
             android:layout_height="83dp"
@@ -215,7 +215,7 @@
             android:background="@color/colorButton"/>
 
         <Button
-            android:text="DELETE"
+            android:text="BORRAR"
             android:id="@+id/ButtonBorrar"
             android:onClick="borrarDigito"
             android:layout_width="80dp"

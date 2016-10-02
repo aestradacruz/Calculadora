@@ -9,6 +9,16 @@ import android.widget.Toast;
 import com.example.abele.calculadora.Botones.Digito;
 import com.example.abele.calculadora.Botones.Operador;
 
+/**
+ * Clase principal que:
+ *   1) Muestra el digito seleccionado por el usuario en el TextView.
+ *   2) Elimina el ultimo digito que contenga el TextView.
+ *   3) Elimina el contenido completo que muestre el TextView .
+ *   4) Realiza la operación.
+ * @autor Abel Estrada Cruz
+ * @version 1.0
+ * @since Calculadora 1.0
+ */
 public class MainActivity extends AppCompatActivity {
 
     TextView tvPantalla;
@@ -35,9 +45,10 @@ public class MainActivity extends AppCompatActivity {
         operador = new Operador();
     }
 
-
     /**
-     * Método que muestra en la pantalla el digito seleccionado por el usuario
+     * Método para mostrar en TextView el digito seleccionado por el usuario.
+     * @param view View de números.
+     * @since Calculadora 1.0
      */
     public void mostrarDigito(View view){
 
@@ -49,24 +60,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Método que inicializa las variables primerNumero y segundoNumero a 0.
-     * Limpia los digitos en pantalla.
+     * Método para eliminar el contenido del TextView e inicializar las variables primerNumero y segundoNumero a 0.
+     * @param view View de ButtonClear.
+     * @since Calculadora 1.0
      */
     public void limpiarPantalla(View view){
 
         primerNumero=0;
         segundoNumero= 0;
         tvPantalla.setText(""+0);
-
     }
 
 
     /**
-     * Método que elimina el ultimo digito de la pantalla.
+     * Método para eliminar el último digito del TextView.
+     * @param view View de ButtonBorrar.
+     * @since Calculadora 1.0
      */
     public void borrarDigito(View view){
 
         String cadenaInicial = tvPantalla.getText().toString();
+
 
         int longitudNumero;
 
@@ -83,11 +97,10 @@ public class MainActivity extends AppCompatActivity {
         tvPantalla.setText(cadenaFinal);
     }
 
-
     /**
-     * Metodo que inicializa la variable primerNumero según el digito seleccionado por el usuario.
-     * Limpia los digitos en pantalla
-     * Inicializa la variable valorOperador según el operador seleccionado por el usuario.
+     * Método para inicializar las variables primerNumero y valorOperador. El método también limpia los digitos del TextView.
+     * @param view Views de ButtonMenos, ButtonMas, ButtonPor o ButtonDivision.
+     * @since Calculadora 1.0
      */
     public void setOperador(View view) {
 
@@ -102,12 +115,13 @@ public class MainActivity extends AppCompatActivity {
         operador.setId(idOperador);
 
         valorOperador = operador.getId();
-
     }
 
 
     /**
-     * Método que realiza la operación y muestra el resultado en pantalla.
+     * Método para realizar la operación.
+     * @param view View de ButtonIgual.
+     * @since Calculadora 1.0
      */
     public void getResultado(View view){
 

@@ -4,7 +4,10 @@ package com.example.abele.calculadora.Botones;
 import com.example.abele.calculadora.R;
 
 /**
- * Clase que maneja el operador seleccionado por el usuario.
+ * Clase para manejar el ID del operador seleccionado por el usuario.
+ * @author Abel Estrada Cruz
+ * @version 1.0
+ * @since Calculadora 1.0
  * Created by abele on 21/06/2016.
  */
 public class Operador extends Boton {
@@ -12,8 +15,9 @@ public class Operador extends Boton {
     private int id;
 
     /**
-     * Método que recibe y evalua el ID del operador seleccionado.
-     * @return Retorna un número entre el 1 y 4 según corresponda con el operador seleccionado.
+     * Método para obtener el operador seleccionado.
+     * @return Número entero entre el 1 y 4 según corresponda con el operador seleccionado.
+     * @since Calculadora 1.0
      */
     @Override
     public int getId(){
@@ -37,8 +41,9 @@ public class Operador extends Boton {
     }
 
     /**
-     * Método que recibe como parámetro el ID del operador seleccionado.
-     * El valor recibido por el parametro es asignado a la variable de clase "id".
+     * Método para establecer el valor de la variable id.
+     * @param id Entero que almacena el ID del operador seleccionado.
+     * @since Calculadora 1.0
      */
     @Override
     public void setId(int id){
